@@ -1,0 +1,22 @@
+import Image, { ImageProps } from "next/image";
+
+type AvatarImageProps = ImageProps;
+
+export function AvatarImage({
+  src,
+  alt,
+  width = 40,
+  height = 40,
+  ...rest
+}: AvatarImageProps) {
+  return (
+    <Image
+      className="border-[1px] border-blue-200 rounded-full"
+      {...rest}
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+    />
+  );
+}

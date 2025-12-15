@@ -34,7 +34,7 @@ const cardsSupport = [
 
 export function SupportSection() {
     return (
-        <section className="relative pb-8 md:py-10 bg-gray-700">
+        <section className="relative pb-8 md:py-10">
             <div className="absolute inset-0 hidden md:block bg-[url('/background-support-section.svg')] bg-cover bg-center bg-no-repeat opacity-90"/>
             
             <div className="container pb-8 py-3 w-full md:py-10 relative">

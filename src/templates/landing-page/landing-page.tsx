@@ -8,7 +8,7 @@ import {
 
 export function LandingPage() {
   return (
-    <article className="flex flex-col gap-10 md:gap-20">
+    <article className="flex flex-col gap-10 md:gap-20 bg-gray-500">
       <HeroSection />
       <FeatureSection />
       <SupportSection />

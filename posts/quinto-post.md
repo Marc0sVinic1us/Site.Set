@@ -1,14 +1,14 @@
 ---
-title: "Transformando seu negócio em uma loja virtual"
-description: "Se você está buscando uma maneira simples e eficaz de vender seus produtos online, o Site.Set é a solução perfeita para você."
-date: "2024-12-20T17:30:00Z"
-image: "/assets/post-001.png"
+title: "Crie sua loja e comece a vender"
+description: "A criação de um e-commerce não precisa ser difícil. Desde o cadastro de produtos até o design da sua página, nossa plataforma oferece tudo o que você precisa para começar a vender de forma simples e prática."
+date: "2024-11-24T11:36:00Z"
+image: "/assets/post-005.png"
 author:
   avatar: "/customer-06.png"
   name: Aspen Dokidis
 ---
 
-Se você está buscando uma maneira simples e eficaz de vender seus produtos online, o Site.Set é a solução perfeita para você. Criar uma loja virtual de sucesso nunca foi tão fácil. Com nossa plataforma intuitiva, você pode criar um site profissional para sua loja em minutos, sem precisar de conhecimentos técnicos.
+A criação de um e-commerce não precisa ser difícil. Desde o cadastro de produtos até o design da sua página, nossa plataforma oferece tudo o que você precisa para começar a vender de forma simples e prática.
 
 Veja o que nossa plataforma oferece:
 
