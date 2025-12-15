@@ -1,6 +1,8 @@
-export default function BlogPage() {
-    return (
-        <div>
-        </div>
-    )
+import { BlogPage } from "@/templates/blog-page";
+
+export default function Blog() {
+
+  return (
+      <BlogPage />
+  );
 }
