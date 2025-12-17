@@ -53,10 +53,9 @@ export function PostCard({slug, title, description, image, date, author}: PostCa
           <div className="flex items-center gap-3 border-t border-gray-400 py-4">
             <Avatar.Container>
               <Avatar.Image
+                size='xs'
                 src={author.avatar}
-                alt={title}
-                height={22}
-                width={22}
+                alt={author.name}
               />
               <Avatar.Title>{author.name}</Avatar.Title>
             </Avatar.Container>

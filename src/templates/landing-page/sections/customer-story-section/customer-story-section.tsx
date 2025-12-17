@@ -36,6 +36,7 @@ export function CustomerStorySection() {
                             <div className="flex items-center gap-3">
                                 <Avatar.Container>
                                     <Avatar.Image 
+                                        size='sm'
                                         src={customer.author.avatar}
                                         alt={customer.author.avatar}
                                     />
