@@ -11,17 +11,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Avatar } from "@/components/avatar";
 import { Markdown } from "@/components/markdown";
-import { SharePostButtons } from "./components/share-post-buttons/share-post-buttons";
+import { SharePostButtons } from "./components/share-post-buttons";
 
 
 export type PostPageProps = {
-  post: Post,
-  slug: string
+  post: Post
 }
 
-export function PostPage({ post, slug }: PostPageProps) {
+export function PostPage({ post }: PostPageProps) {
 
   const publishedDate = new Date(post.date).toLocaleDateString("pt-BR");
+  const siteSetUrl = `https://site.set/blog/${post.slug}`
 
   return (
     <main className="py-20 text-gray-100">
@@ -50,8 +50,10 @@ export function PostPage({ post, slug }: PostPageProps) {
             </Breadcrumb>
             <div className="block md:hidden lg:hidden">
                 <SharePostButtons 
-                    post={post}
-                    slug={slug}
+                    url={siteSetUrl}
+                    title={post.title}
+                    text={post.description}
+                    slug={post.slug}
                 />
             </div>
         </div>
@@ -100,8 +102,10 @@ export function PostPage({ post, slug }: PostPageProps) {
                 Compartilhar
               </h2>
               <SharePostButtons 
-                post={post}
-                slug={slug}
+                url={siteSetUrl}
+                title={post.title}
+                text={post.description}
+                slug={post.slug}
               />
             </div>
           </aside>

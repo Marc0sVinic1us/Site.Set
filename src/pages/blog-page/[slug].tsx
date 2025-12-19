@@ -3,8 +3,8 @@ import { allPosts } from "contentlayer/generated";
 import { GetStaticPaths, GetStaticProps } from "next";
 
 
-export default function PostPage({ post, slug }: PostPageProps) {
-    return <Post post={post} slug={slug} />
+export default function PostPage({ post }: PostPageProps) {
+    return <Post post={post} />
 }
 
 

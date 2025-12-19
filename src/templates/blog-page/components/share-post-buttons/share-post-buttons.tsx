@@ -1,21 +1,22 @@
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { UseShare } from "@/hooks";
-import { Post } from "contentlayer/generated";
 import { useEffect } from "react";
 
 type SharePostButtonsProps = {
-  post: Post;
+  url: string;
+  title: string;
+  text: string;
   slug: string;
 };
 
-export function SharePostButtons({ post, slug }: SharePostButtonsProps) {
-  
-  const siteSetUrl = `https://site.set/blog/${slug}`;
+export function SharePostButtons({ url, title, text }: SharePostButtonsProps) {
   
   const { shareButtons } = UseShare({
-    url: siteSetUrl,
-    title: post.title,
-    text: post.description,
+    url: url,
+    title: title,
+    text: text,
   });
   
   useEffect(() => {}, [])

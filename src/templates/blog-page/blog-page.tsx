@@ -1,5 +1,6 @@
+'use client';
 import { SearchInput } from "@/components/search-input";
-import { useRouter } from "next/router";
+import { useSearchParams } from "next/navigation";
 import { PostCard } from "./components/post-card";
 import { PostGridCard } from "./components/post-grid-card";
 import { Post } from "contentlayer/generated";
@@ -11,8 +12,8 @@ export type BlogPageProps = {
 }
 
 export function BlogPage({ posts }: BlogPageProps) {
-  const router = useRouter();
-  const query = (router.query.q as string) ?? "";
+  const seachParams = useSearchParams();
+  const query = seachParams?.get('q') ?? "";
 
   const pageTitle = query
     ? `Resultados para busca "${query}"`
